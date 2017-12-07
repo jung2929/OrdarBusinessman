@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="60dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/color_white"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_home_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/main_select_all_back"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/main_home_viewpager">
+
+                <TextView
+                    android:id="@+id/main_select_all_tile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:text="@string/main_home_sub_title"
+                    android:textColor="@color/color_text_light"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/main_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="10dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:id="@+id/select_all"
+                        android:background="@drawable/checkbox" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/main_home_select_all"
+                        android:textColor="@color/color_text_light"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_recycler_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_select_all_back"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/main_home_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/main_home_recycler_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+    android:id="@+id/fab"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/round_fb"
+    android:gravity="center"
+    android:textSize="11sp"
+    android:text="바로\n주문"
+    android:textColor="@color/color_white"
+    android:textStyle="bold" />
+    <TextView
+        android:id="@+id/fab_title"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:text="바로\n주문"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" />
+</RelativeLayout>

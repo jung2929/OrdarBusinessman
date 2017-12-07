@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:onClick="onClick"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_logo"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underline_main_color"
+                android:hint="@string/login_id"
+                android:inputType="textNoSuggestions"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/color_main"
+                android:textColorHint="@color/color_text_light"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/login_delete_id"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_delete"
+                android:onClick="onClick"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_id_ch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="@string/login_id_ch"
+            android:textColor="@color/color_red"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/login_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underline_main_color"
+                android:hint="@string/login_pw"
+                android:inputType="textNoSuggestions|textPassword"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/color_main"
+                android:textColorHint="@color/color_text_light"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/login_delete_pw"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_delete"
+                android:onClick="onClick"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_pw_ch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="@string/login_pw_ch"
+            android:textColor="@color/color_red"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/login_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/login_auto_iv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/login_unchecked" />
+
+            <TextView
+                android:id="@+id/login_auto_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/login_auto_iv"
+                android:text="@string/login_auto"
+                android:textColor="@color/color_text_light"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@color/color_main"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/login"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/login_to_join"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box_white"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/login_to_join"
+                android:textColor="@color/color_main"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

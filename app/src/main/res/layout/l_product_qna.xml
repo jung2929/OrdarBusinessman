@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="39dp"
+        android:id="@+id/product_qna_write"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/box_white"
+        android:gravity="center"
+        android:text="@string/product_qna"
+        android:textColor="@color/color_gray"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/product_qna_write"
+        android:id="@+id/product_qna_recycler"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

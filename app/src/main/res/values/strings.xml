@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">odar</string>
+
+    <!--login-->
+    <string name="login_id">아이디</string>
+    <string name="login_id_ch">아이디를 입력해주세요</string>
+    <string name="login_pw">비밀번호</string>
+    <string name="login_pw_ch">비밀번호를 입력해주세요</string>
+    <string name="login_auto">자동로그인</string>
+    <string name="login_to_join">회원가입</string>
+    <string name="login">로그인</string>
+    <string name="login_dialog_title">입력정보 오류</string>
+    <string name="login_dialog_contents">입력하신 아이디 또는 비밀번호가 일치하지 않습니다.</string>
+
+
+    <!--Main-->
+    <string name="main_actionbar_title">오다</string>
+    <string name="main_tab_home">홈</string>
+    <string name="main_tab_category">카테고리</string>
+    <string name="main_tab_tip">꿀팁</string>
+    <string name="main_tab_mypage">마이페이지</string>
+
+    <!--Main_home-->
+    <string name="main_home_sub_title">필요하실 것 같은 상품</string>
+    <string name="main_home_select_all">전체선택</string>
+    <string name="main_home_direct_order">바로주문</string>
+    <string name="main_home_recycler_more">더보기</string>
+    <string name="main_home_item_odar_price">오다가</string>
+    <string name="main_home_event_more">자세히 보기</string>
+
+    <!--Main_Category-->
+    <string name="main_category_1">과일/견과</string>
+    <string name="main_category_2">채소/친환경</string>
+    <string name="main_category_3">쌀/잡곡</string>
+    <string name="main_category_4">정육/계란</string>
+    <string name="main_category_5">해산물/건어물</string>
+    <string name="main_category_6">생수/음료/커피</string>
+    <string name="main_category_7">과자/빵/유제품</string>
+    <string name="main_category_8">라면/통조림/장류</string>
+    <string name="main_category_9">냉장/냉동식품</string>
+    <!--Tip-->
+    <string name="main_tip_total_cnt">총 게시물</string>
+    <!--Product-->
+    <string name="product_tab_detail">상품 상세</string>
+    <string name="product_tab_review">상품 리뷰</string>
+    <string name="product_tab_qna">상품 QnA</string>
+    <string name="product_detail_cart">장바구니 담기</string>
+    <string name="product_detail_direct_order">바로 주문하기</string>
+    <string name="product_detail_title">상품필수정보</string>
+    <string name="product_detail_1">포장 단위별 용량, 수량, 크기</string>
+    <string name="product_detail_2">축산법에 따른 등급표시</string>
+    <string name="product_detail_3">축산물이력제 표시유무</string>
+    <string name="product_detail_4">보관방법 또는 취급방법</string>
+    <string name="product_detail_5">원산지</string>
+    <string name="product_detail_6">식품위생법에 따른 수입신고 필함여부</string>
+    <string name="product_review">상품후기 작성하기</string>
+    <string name="product_qna">QnA 작성하기</string>
+
+    <!--Search-->
+    <string name="search_tab_recent">최근검색어</string>
+    <string name="search_tab_hot">인기검색어</string>
+
+    <!--Actionbar-->
+    <string name="actionbar_search">검색어를 입력해주세요</string>
+
+    <!--Setting-->
+    <string name="setting_push">푸쉬알림</string>
+    <string name="setting_modify">회원정보수정</string>
+    <string name="setting_cv">고객센터</string>
+
+    <!--Dialog-->
+    <string name="dialog_exit">닫기</string>
+    <!--Network-->
+    <string name="network_title">네트워크 연결에 문제가 있습니다\n잠시후 다시 시도해주세요.</string>
+    <string name="network_refresh">다시시도</string>
+</resources>

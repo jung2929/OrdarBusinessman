@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<RelativeLayout android:layout_width="match_parent"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:background="@color/color_main"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:id="@+id/main_base_actionbar">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/main_actionbar_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/main_actionbar_title"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textColor="@color/color_white"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="18dp"-->
+    <!--android:layout_toLeftOf="@+id/main_actionbar_cart"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/actionbar_search"-->
+    <!--android:id="@+id/main_actionbar_search"-->
+    <!--android:layout_height="18dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="19dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="17dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/actionbar_cart"-->
+    <!--android:id="@+id/main_actionbar_cart"-->
+    <!--android:layout_height="15dp" />-->
+    <!--</RelativeLayout>-->
+    <com.yep.odar.Util.U_Main_ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tab" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/main_tab"
+        android:background="@color/color_soft_gray" />
+
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <RelativeLayout
+            android:id="@+id/main_base_home_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_base_home_tab_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_ch" />
+
+            <TextView
+                android:id="@+id/main_base_home_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_base_home_tab_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="홈"
+                android:textColor="@color/color_main"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_base_category_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_base_category_tab_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/category_unch" />
+
+            <TextView
+                android:id="@+id/main_base_category_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_base_category_tab_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="카테고리"
+                android:textColor="@color/color_light_gray"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_base_tip_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_base_tip_tab_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/tip_unch" />
+
+            <TextView
+                android:id="@+id/main_base_tip_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_base_tip_tab_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="팁"
+                android:textColor="@color/color_light_gray"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_base_mypage_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_base_mypage_tab_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mypage_unch" />
+
+            <TextView
+                android:id="@+id/main_base_mypage_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_base_mypage_tab_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="마이페이지"
+                android:textColor="@color/color_light_gray"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

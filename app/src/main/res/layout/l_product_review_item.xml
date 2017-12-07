@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/box_white">
+
+    <ImageView
+        android:id="@+id/product_review_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:background="@color/color_white" />
+
+
+    <TextView
+        android:id="@+id/product_review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/product_review_img"
+        android:text="title"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/product_review_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="12.32.33"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/product_review_id"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/product_review_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="ddsfsdf"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/product_review_contents"
+        android:layout_width="wrap_content"
+        android:maxLines="2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:text="종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오종하오오오"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/product_review_img"
+        android:textSize="12sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_light_gray" />
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/color_white"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/product_img_back"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:id="@+id/product_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/temp_product"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/product_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_img_back"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="19dp">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="상품명입니다"
+                    android:textColor="@color/color_gray"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/product_odar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_name"
+                    android:layout_marginTop="9dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="오다가"
+                    android:textColor="@color/color_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/product_odar"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/product_odar"
+                    android:lineSpacingExtra="-3sp"
+                    android:text="90,000원"
+                    android:textColor="@color/color_main"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_alignTop="@+id/product_tab"
+                android:background="@color/color_light_gray" />
+
+            <LinearLayout
+                android:id="@+id/product_tab"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/product_content"
+                android:layout_marginTop="17dp">
+
+                <TextView
+                    android:id="@+id/product_tab_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/product_tab_detail"
+                    android:textColor="@color/color_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/product_tab_review"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/product_tab_review"
+                    android:textColor="@color/color_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/product_tab_qna"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/product_tab_qna"
+                    android:textColor="@color/color_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/product_tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/product_tab">
+
+                <TextView
+                    android:id="@+id/product_tab_line_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_red" />
+
+                <TextView
+                    android:id="@+id/product_tab_line_reciew"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_white" />
+
+                <TextView
+                    android:id="@+id/product_tab_line_qna"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_white" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignBottom="@+id/product_tab_line"
+                android:background="@color/color_light_gray" />
+
+            <com.yep.odar.Util.U_Main_ViewPager
+                android:id="@+id/product_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_below="@+id/product_tab"
+                android:layout_marginTop="18dp"
+                android:background="@color/color_red" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:id="@+id/product_no"-->
+    <!--android:layout_alignParentBottom="true">-->
+    <!---->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/product_btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/product_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_light_gray"
+            android:gravity="center"
+            android:text="@string/product_detail_cart"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/product_direct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_main"
+            android:gravity="center"
+            android:text="@string/product_detail_direct_order"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+</RelativeLayout>

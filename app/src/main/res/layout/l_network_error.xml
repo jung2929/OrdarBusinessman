@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:id="@+id/network_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/color_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/network_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:gravity="center"
+            android:text="@string/network_title"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/color_gray"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/network_refresh"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@drawable/box_gray"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="10dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>

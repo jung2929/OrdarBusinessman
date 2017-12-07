@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="60dp"
+    android:background="@color/color_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_tip_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/main_tip_title"
+                android:layout_below="@+id/main_tip_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/main_tip_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:text="@string/main_tip_total_cnt"
+                    android:textColor="@color/color_text_light"
+                    android:textSize="12sp" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/main_select_all"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="17dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="18dp"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:background="@drawable/login_unchecked" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:text="@string/main_home_select_all"-->
+                <!--android:textColor="@color/color_text_light"-->
+                <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_recycler_back"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/main_tip_title"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/main_tip_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/color_white"
+                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
